@@ -1,24 +1,20 @@
-# Compiled Object files
-*.o
-*.obj
+name: "Customer GITHUB_ENV var Demo"
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+on:
+    push:
+        branches: ["main"]
+    workflow_dispatch
 
-# Compiled Static libraries
-*.a
-*.lib
+jobs:
+  custome_GITHUB_ENV:
+    runs-on: ubuntu-latest
+    steps:
+      - name: set the value
+        id: step_one
+        run: |
+          echo "action_state=yellow" >> $GITHUB_ENV
 
-# Executables
-*.exe
-
-# DUB
-.dub
-docs.json
-__dummy.html
-docs/
-
-# Code coverage
-*.lst
+      - name: Use the value
+        id: step_two
+        run: |
+          echo "${{ env.action_state }}" # This will output 'yellow'
