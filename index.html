@@ -3,11 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My New Repo</title>
+    <title>My Modern App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <p>This is new repo.</p>
-    <h1>Welcome!</h1>
-    <p>This is a simple index.html file for my new GitHub repository.</p>
+<body class="bg-gradient-to-br from-purple-500 via-pink-500 to-red-500 min-h-screen flex items-center justify-center p-6">
+    
+    <div class="bg-white rounded-3xl shadow-2xl p-10 max-w-4xl w-full animate-fade-in">
+        
+        <!-- Header -->
+        <div class="text-center mb-8">
+            <h1 class="text-5xl md:text-6xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent mb-4">
+                🚀 Welcome to My Project
+            </h1>
+            <p class="text-gray-600 text-lg md:text-xl">Built with Docker, GitHub Actions & Nginx</p>
+        </div>
+
+        <!-- Highlight Box -->
+        <div class="bg-gradient-to-r from-blue-500 to-teal-400 rounded-2xl p-6 md:p-8 text-white mb-8 shadow-lg">
+            <p class="text-xl md:text-2xl font-bold mb-2">✨ Automatically Deployed</p>
+            <p class="text-base md:text-lg">CI/CD pipeline ready and running!</p>
+        </div>
+
+        <!-- Feature Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mb-8">
+            
+            <div class="bg-gradient-to-br from-yellow-400 to-orange-500 rounded-xl p-6 text-center transform hover:-translate-y-2 transition duration-300 shadow-lg cursor-pointer">
+                <div class="text-4xl mb-3">🎨</div>
+                <h3 class="text-xl font-bold text-white mb-2">Modern Design</h3>
+                <p class="text-white opacity-90">Beautiful UI with Tailwind CSS</p>
+            </div>
+
+            <div class="bg-gradient-to-br from-green-400 to-blue-500 rounded-xl p-6 text-center transform hover:-translate-y-2 transition duration-300 shadow-lg cursor-pointer">
+                <div class="text-4xl mb-3">📱</div>
+                <h3 class="text-xl font-bold text-white mb-2">Fully Responsive</h3>
+                <p class="text-white opacity-90">Works perfectly on all devices</p>
+            </div>
+
+            <div class="bg-gradient-to-br from-pink-400 to-purple-500 rounded-xl p-6 text-center transform hover:-translate-y-2 transition duration-300 shadow-lg cursor-pointer">
+                <div class="text-4xl mb-3">⚡</div>
+                <h3 class="text-xl font-bold text-white mb-2">Lightning Fast</h3>
+                <p class="text-white opacity-90">Optimized performance</p>
+            </div>
+
+        </div>
+
+        <!-- Stats Section -->
+        <div class="grid grid-cols-3 gap-4 mb-8 text-center">
+            <div class="bg-purple-50 rounded-lg p-4">
+                <div class="text-3xl font-bold text-purple-600">100%</div>
+                <div class="text-sm text-gray-600">Automated</div>
+            </div>
+            <div class="bg-pink-50 rounded-lg p-4">
+                <div class="text-3xl font-bold text-pink-600">24/7</div>
+                <div class="text-sm text-gray-600">Available</div>
+            </div>
+            <div class="bg-blue-50 rounded-lg p-4">
+                <div class="text-3xl font-bold text-blue-600">Fast</div>
+                <div class="text-sm text-gray-600">Deployment</div>
+            </div>
+        </div>
+
+        <!-- Buttons -->
+        <div class="text-center space-x-4">
+            <a href="#" class="inline-block bg-gradient-to-r from-purple-600 to-pink-600 text-white font-bold py-3 px-8 rounded-full hover:shadow-2xl transform hover:scale-110 transition duration-300">
+                Get Started 🎯
+            </a>
+            <a href="https://github.com/rintuuu" class="inline-block bg-gray-800 text-white font-bold py-3 px-8 rounded-full hover:shadow-2xl transform hover:scale-110 transition duration-300">
+                View GitHub 🔗
+            </a>
+        </div>
+
+    </div>
+
+    <style>
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .animate-fade-in {
+            animation: fade-in 0.8s ease-out;
+        }
+    </style>
+
 </body>
 </html>
